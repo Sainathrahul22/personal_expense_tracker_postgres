@@ -1,0 +1,25 @@
+# Byte-compiled / cached / virtual env files
+__pycache__/
+*.py[cod]
+*.sqlite3
+db.sqlite3
+.env
+*.env
+*.pyc
+
+# Ignore Python cache
+env/
+venv/
+expense_env/
+
+# Django static files (collected)
+staticfiles/
+static_root/
+
+# VSCode project files/settings
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db

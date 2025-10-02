@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login | Expense Tracker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Welcome Back!</h2>
+    <form id="loginForm">
+      <input name="username" type="text" placeholder="Username" required>
+      <input id="login-password" name="password" type="password" placeholder="Password" required>
+      <div style="text-align: left; margin-bottom:6px">
+        <input type="checkbox" id="show-login-password" style="margin-right:5px;">
+        <label for="show-login-password" style="font-size: 0.99em; color: #333;">Show password</label>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+    <div id="loginMessage" class="flash"></div>
+    <a class="button-link" href="/register.html">Create new account</a>
+  </div>
+  <script src="/static/auth.js"></script>
+  <script>
+    // Show/hide password logic
+    document.getElementById('show-login-password').addEventListener('change', function() {
+      const pwd = document.getElementById('login-password');
+      pwd.type = this.checked ? 'text' : 'password';
+    });
+  </script>
+</body>
+</html>
+
+

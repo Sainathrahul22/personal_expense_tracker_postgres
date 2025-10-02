@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome | Expense Tracker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link to global stylesheet -->
+  <link rel="stylesheet" href="/static/styles.css">
+  <!-- Custom inline CSS for landing page -->
+  <style>
+    body {
+      min-height: 100vh;
+      background: linear-gradient(120deg, #71b7e6, #9b59b6 100%);
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+      color: #232d3b;
+    }
+    .landing-center {
+      min-height: 100vh;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(105deg, rgba(255,255,255,0.80) 0%, rgba(255,255,255,0.60) 90%);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+    .landing-card {
+      background: #fff;
+      padding: 54px 34px 40px 34px;
+      border-radius: 22px;
+      box-shadow: 0 8px 48px 0 rgba(95,71,173,0.17);
+      text-align: center;
+      max-width: 430px;
+      animation: fadein 0.7s;
+    }
+    @keyframes fadein {
+      0% { opacity: 0; transform: translateY(30px);}
+      100% { opacity: 1; transform: translateY(0);}
+    }
+    .landing-title {
+      font-size: 2.45rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+      color: #6c27b8;
+      letter-spacing: -1px;
+      background: linear-gradient(90deg, #3da9fc 40%, #9552ea 110%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .landing-desc {
+      font-size: 1.18rem;
+      margin: 18px 0 40px 0;
+      color: #475377;
+    }
+    .landing-btn {
+      background: linear-gradient(90deg, #4f8dfa 70%, #8431dd 110%);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 15px 50px;
+      font-size: 1.19rem;
+      font-weight: 600;
+      letter-spacing: .02em;
+      box-shadow: 0 2px 16px rgba(95,71,173,0.13);
+      cursor: pointer;
+      transition: background .20s, box-shadow .25s, transform .22s;
+    }
+    .landing-btn:hover {
+      background: linear-gradient(90deg, #7b39e0 70%, #39bae6 120%);
+      box-shadow: 0 5px 24px rgba(95,71,173,0.24);
+      transform: translateY(-2px) scale(1.04);
+    }
+    .landing-footer {
+      margin-top: 34px;
+      font-size: 0.98rem;
+      color: #8c8ca1;
+    }
+    @media (max-width: 600px) {
+      .landing-card {padding: 24px 10px 20px 10px; }
+      .landing-title { font-size: 1.45rem;}
+    }
+  </style>
+</head>
+<body>
+  <div class="landing-center">
+    <div class="landing-card">
+      <div class="landing-title">Welcome to Your Expense Tracker</div>
+      <div class="landing-desc">
+        Organize, track, and grow your financial confidence with ease.<br>
+        Secure • Elegant • User-friendly
+      </div>
+      <button class="landing-btn" onclick="window.location='/login.html'">
+        Get Started &rarr;
+      </button>
+      <div class="landing-footer">
+        (Don’t have an account? Just register after clicking "Get Started")
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard | Expense Tracker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body class="dashboard-bg">
+  <div class="dashboard-header">
+    <h2>My Expenses</h2>
+    <button onclick="window.location='/add.html'">+ Add New Expense</button>
+  </div>
+  <table id="expensesTable">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Amount</th>
+        <th>Category</th>
+        <th>Date</th>
+        <th>Notes</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <div class="dashboard-logout">
+    <button onclick="logout()">Logout</button>
+  </div>
+  <script src="/static/dashboard.js"></script>
+  <script src="/static/auth.js"></script>
+</body>
+</html>
