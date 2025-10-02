@@ -27,7 +27,7 @@ Authentication: Django Auth + DRF Authtoken
 
 ⚙️ Setup Instructions
 1️⃣ Clone the Repository
-git clone https://github.com/your-username/personal_expense_tracker_postgres.git
+git clone https://github.com/Sainathrahul22/personal_expense_tracker_postgres
 cd personal_expense_tracker_postgres
 
 2️⃣ Create a Virtual Environment
